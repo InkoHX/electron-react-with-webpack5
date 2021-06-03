@@ -1,0 +1,11 @@
+{
+  "name": "electron-react-with-webpack5",
+  "productName": "Electron App",
+  "version": "1.0.0",
+  "description": "Template for using the React, Webpack5 in Electron.",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "InkoHX <me@inkohx.dev>"
+}
