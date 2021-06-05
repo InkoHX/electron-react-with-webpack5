@@ -5,20 +5,49 @@
   "description": "Template for using the React, Webpack5 in Electron.",
   "main": "./dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "forge:package": "electron-forge package",
+    "forge:make": "electron-forge make",
+    "webpack:dev": "webpack --mode development",
+    "webpack:prod": "webpack --mode production",
+    "prettier:format": "prettier --ignore-path ./.gitignore --write .",
+    "prettier:check": "prettier --ignore-path ./.gitignore --check .",
+    "eslint:check": "eslint --ignore-path ./.gitignore .",
+    "eslint:fix": "eslint --ignore-path ./.gitignore . --fix"
   },
   "author": "InkoHX <me@inkohx.dev>",
   "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/node": "^14.17.2",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
     "@types/react": "^17.0.9",
-    "@types/react-dom": "^17.0.6",
+    "@types/webpack-subresource-integrity": "^1.2.1",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
     "electron": "^13.1.0",
-    "typescript": "^4.3.2",
+    "electron-releases": "^3.700.0",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "prettier": "^2.3.1",
+    "sass": "^1.34.1",
+    "sass-loader": "^12.0.0",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0"
+    "webpack-cli": "^4.7.0",
+    "webpack-subresource-integrity": "^1.5.2"
   }
 }
